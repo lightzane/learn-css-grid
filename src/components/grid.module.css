@@ -1,0 +1,40 @@
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* sm: (apply CSS anything larger than 640px) */
+@media (min-width: 640px) {
+    .grid {
+        /* Basic: grid-template-columns: 1fr 1fr 1fr 1fr; */
+        grid-template-columns: repeat(4, 1fr);
+        /* 
+            1fr 
+            - is a unit measure, means we can also use pixels, e.g 100px
+            - means a fraction is one part of a whole.
+            - 100% of the available space
+        */
+    }
+
+    .grid-item:nth-child(1),
+    .grid-item:nth-child(4) {
+        /* Span across 2 columns */
+        grid-column: span 2;
+        /* This is shorthand syntax for:
+            grid-column-start: 1; (defaults to current position)
+            grid-column-end: 3;
+
+            --or--
+            grid-column: 1 / 3;
+
+            --or--
+            grid-column: 1 / span 2;
+        */
+    }
+
+    .grid-item:nth-child(5) {
+        grid-column-start: 4;
+        grid-row: 1 / span 2;
+    }
+
+}
