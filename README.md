@@ -1,6 +1,6 @@
 # CSS Grid
 
-Practice CSS Grid. [See demo](https://lightzane.github.io/try-css-grid)
+Practice CSS Grid. [See demo](https://lightzane.github.io/learn-css-grid/)
 
 ![grid overlay](./rassets/grid-overlay.png)
 
