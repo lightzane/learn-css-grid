@@ -109,3 +109,9 @@ See more examples below:
 ```
 
 ![grid](grid.png)
+
+## Other Examples
+
+### Dense Example
+
+See [dense-example.module.css](./src/components/dense-example.module.css)
