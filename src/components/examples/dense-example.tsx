@@ -1,5 +1,5 @@
 import styles from './dense-example.module.css';
-import GridItem from './grid-item';
+import GridItem from '../grid-item';
 
 export default () => {
   return (

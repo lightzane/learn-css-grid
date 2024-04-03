@@ -114,4 +114,8 @@ See more examples below:
 
 ### Dense Example
 
-See [dense-example.module.css](./src/components/dense-example.module.css)
+See [dense-example.module.css](./src/components/examples/dense-example.module.css)
+
+### Auto column example
+
+See [auto-col-example.module.css](./src/components/examples/auto-col-example.module.css)

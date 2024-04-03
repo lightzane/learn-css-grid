@@ -1,0 +1,34 @@
+.grid {
+    display: grid;
+    gap: 1.5rem;
+    align-items: end; /* or flex-end */
+}
+
+/* sm: */ 
+@media (min-width: 640px) {
+    .grid {
+        grid-auto-flow: column;
+        /* 
+            The default is `1fr` and distribute sizes equally to fill remaining space,
+            So this is optional to setup:
+
+                grid-auto-columns: 1fr;
+
+            > IF you know flex, this is equivalent to flex-direction: column
+
+            But you can provide an explicit size for each column like so:
+
+                grid-auto-columns: 280px;
+
+            > Note that by providing an explicit size, can overflow horizontally
+        */
+    }
+
+    ._3 {
+        align-self: center;
+    }
+
+    ._4 {
+        align-self: self-start;
+    }
+}

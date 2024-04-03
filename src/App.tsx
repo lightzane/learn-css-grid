@@ -1,6 +1,7 @@
-import DenseExample from './components/dense-example';
-import TailwindGrid from './components/tailwind-grid';
-import VanillaGrid from './components/vanilla-grid';
+import AutoColExample from './components/examples/auto-col-example';
+import DenseExample from './components/examples/dense-example';
+import TailwindGrid from './components/examples/tailwind-grid';
+import VanillaGrid from './components/examples/vanilla-grid';
 
 export default function App() {
   return (
@@ -15,12 +16,24 @@ export default function App() {
           <TailwindGrid />
         </div>
         <hr />
+
+        {/* Other examples */}
         <div className='py-5'>
           <span className='uppercase font-semibold sm:text-sm'>
             Other examples...
           </span>
+        </div>
+
+        {/* dense example */}
+        <div className='py-5'>
           <p className='leading-6 p-5'>Dense example</p>
           <DenseExample />
+        </div>
+
+        {/* auto column example */}
+        <div className='py-5'>
+          <p className='leading-6 p-5'>Auto column example</p>
+          <AutoColExample />
         </div>
       </div>
     </div>
