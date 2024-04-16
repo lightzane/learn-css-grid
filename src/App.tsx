@@ -1,5 +1,6 @@
 import AutoColExample from './components/examples/auto-col-example';
 import DenseExample from './components/examples/dense-example';
+import MouseTrackExample from './components/examples/mouse-track-example';
 import TailwindGrid from './components/examples/tailwind-grid';
 import VanillaGrid from './components/examples/vanilla-grid';
 
@@ -34,6 +35,20 @@ export default function App() {
         <div className='py-5'>
           <p className='leading-6 p-5'>Auto column example</p>
           <AutoColExample />
+        </div>
+
+        {/* mouse track example */}
+        <div className='py-5'>
+          <p className='leading-6 p-5 pb-0'>Mouse Track example</p>
+          <p className='px-5 sm:text-sm text-gray-500'>
+            Apply a basic 3x3 grid that can be used as a mouse track for 3D tilt
+            card
+          </p>
+          <p className='px-5 pb-5 sm:text-sm text-gray-500'>
+            Parent style:{' '}
+            <code>grid-template: repeat(3, 1fr) / repeat(3, 1fr)</code>
+          </p>
+          <MouseTrackExample />
         </div>
       </div>
     </div>
